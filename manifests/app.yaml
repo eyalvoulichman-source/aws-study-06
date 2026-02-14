@@ -22,7 +22,7 @@ spec:
         - name: APP_COLOR
           value: "lightblue"
         volumeMounts:
-        - name: task-data
+        - name: tasks-data
           mountPath: /tmp/data-app # הנתיב שבו האפליקציה מחפשת את הקובץ
       volumes:
       - name: task-data
