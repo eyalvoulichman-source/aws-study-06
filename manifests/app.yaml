@@ -23,7 +23,7 @@ spec:
           value: "lightblue"
         volumeMounts:
         - name: task-data
-          mountPath: /tmp/data # הנתיב שבו האפליקציה מחפשת את הקובץ
+          mountPath: /tmp/data-app # הנתיב שבו האפליקציה מחפשת את הקובץ
       volumes:
       - name: task-data
         emptyDir: {} #
