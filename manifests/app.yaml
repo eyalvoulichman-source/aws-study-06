@@ -26,9 +26,7 @@ spec:
           mountPath: /tmp/data-app # הנתיב שבו האפליקציה מחפשת את הקובץ
       volumes:
       - name: task-data
-        hostPath:
-          path: /mnt/d/k8s-data  # זה הנתיב ש-WSL2 משתמש בו כדי לראות את כונן D
-          type: DirectoryOrCreate
+        emptyDir: {}
 apiVersion: v1
 kind: Service
 metadata:
