@@ -27,7 +27,7 @@ spec:
       volumes:
       - name: task-data
         hostPath:
-          path: /run/desktop/mnt/host/c/k8s-data # נתיב על המחשב שלך (כונן C)
+          path: /d/k8s-data # נתיב על המחשב שלך (כונן C)
           type: Directory
 ---
 apiVersion: v1
