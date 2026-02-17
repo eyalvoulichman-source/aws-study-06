@@ -27,9 +27,8 @@ spec:
       volumes:
       - name: task-data
         hostPath:
-          path: /run/desktop/mnt/host/d/k8s-data # כאן החלפנו מ-c ל-d
+          path: /mnt/d/k8s-data  # זה הנתיב ש-WSL2 משתמש בו כדי לראות את כונן D
           type: DirectoryOrCreate
----
 apiVersion: v1
 kind: Service
 metadata:
