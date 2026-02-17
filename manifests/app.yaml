@@ -26,7 +26,9 @@ spec:
           mountPath: /tmp/data-app # הנתיב שבו האפליקציה מחפשת את הקובץ
       volumes:
       - name: task-data
-        emptyDir: {} #
+        hostPath:
+          path: /run/desktop/mnt/host/c/k8s-data # נתיב על המחשב שלך (כונן C)
+          type: DirectoryOrCreate
 ---
 apiVersion: v1
 kind: Service
